@@ -20,10 +20,15 @@ function ExperienceCards({}: Props) {
         viewport={{
             once:true
         }}
-        className=' h-60 w-60 rounded-full xl:w-[200px] xl:h-[200px]'
-        src="/Dell_Logo.png" alt="" />
+        className=' h-32 w-32 rounded-full xl:w-[200px] xl:h-[200px]'
+        src="/Dell_logo1.png" alt="" />
+
+        <div>
+            
+        </div>
 
     </article>
+    
   )
 }
 
