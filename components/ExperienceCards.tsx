@@ -33,9 +33,9 @@ function ExperienceCards({}: Props) {
           <li>
             Led the effort to set up design and develop, dashboards and alerts for our team’s microservices using React and Java worth 2 million USD onto Dell’s non-production loggings
           </li>
-          <li>
+          {/* <li>
             Contributed to CI/CD pipeline integration, unit/functional/integration testing, deployments using Gitlab.
-          </li>
+          </li> */}
           <li>Authored unit tests with Jest and Mockito achieving 90% code coverage</li>
         </ul>
       </div>
