@@ -19,7 +19,8 @@ function Skill({directionLeft}: Props) {
         }}
         whileInView={{opacity:1,x:0}}
         src='/sanity_logo.png'
-        className=' h-20 w-20'
+        className=' h-24 w-24 rounded-full border border-gray-500 object-cover filter group-hover:grayscale
+         transition duration-300 ease-in-out'
         />
     </div>
   )
