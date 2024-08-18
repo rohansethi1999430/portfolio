@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 type Props = {}
 
 function Projects({}: Props) {
-    const projects = [1,2,3,4,5]
+    const projects = [1,2,3,4,5,6]
   return (
     <div className=' h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full 
     mx-auto justify-evenly items-center z-0'>
