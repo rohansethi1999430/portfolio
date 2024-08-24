@@ -8,32 +8,44 @@ function Projects({}: Props) {
 
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full mx-auto justify-evenly items-center z-0">
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 mt-20">
-        {/* Added mt-20 to add margin on top */}
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-full"
+            className="w-screen flex-shrink-0 snap-center flex flex-row items-center justify-center p-20 h-full space-x-10"
           >
-            <motion.img
-              src="/Travel_France_Home.png"
-              alt="Travel France"
-              className="w-[300px] h-auto object-contain mt-20"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-            />
-            <div className="space-y-5 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
-                Go Travel France
-              </h4>
-              <p className="text-lg text-center">
-                Enjoy the Trip with Good Moments. Explore France: Where Every Corner Tells a Story.
-              </p>
+            {/* Left Side Content */}
+            <div className="hidden md:block w-1/4 text-center text-white">
+              <p>Your text on the left side here. You can add descriptions or other content.</p>
+            </div>
+
+            {/* Main Image and Content */}
+            <div className="flex flex-col items-center justify-center">
+              <motion.img
+                src="/Travel_France_Home.png"
+                alt="Travel France"
+                className="w-[300px] h-auto object-contain mt-40"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+              />
+              <div className="space-y-5 px-0 md:px-10 max-w-6xl">
+                <h4 className="text-4xl font-semibold text-center">
+                  Go Travel France
+                </h4>
+                <p className="text-lg text-center">
+                  Enjoy the Trip with Good Moments. Explore France: Where Every Corner Tells a Story.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side Content */}
+            <div className="hidden md:block w-1/4 text-center text-white">
+              <p>Your text on the right side here. You can add more information or links.</p>
             </div>
           </div>
         ))}
