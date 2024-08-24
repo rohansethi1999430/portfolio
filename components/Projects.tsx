@@ -13,7 +13,7 @@ function Projects({}: Props) {
 
         <div className=' relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {projects.map((projects)=>(
-                <div className=' w-screen flex-shrink-0 snap-center'>
+                <div className=' w-screen snap-center'>
                     <img src="/Travel_France_Home.png" alt="" className=' mt-20' />
                     <div>
                         <h4>Go Travel France</h4>
