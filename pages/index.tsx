@@ -35,10 +35,11 @@ export default function Home() {
     </section>
 
     <section id = 'projects' className=" snap-start">
-      <Skills/>
+    <Projects/>
+     
     </section>
     <section id = 'skills' className=" snap-start">
-      <Projects/>
+    <Skills/>
     </section>
 
    </div>
