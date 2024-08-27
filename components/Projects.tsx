@@ -12,7 +12,7 @@ function Projects({}: Props) {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 mt-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 mt-10">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -32,7 +32,7 @@ function Projects({}: Props) {
               <motion.img
                 src="/Travel_France_Home.png"
                 alt="Travel France"
-                className="w-[300px] h-auto object-contain mt-40"
+                className="w-[300px] h-auto object-contain mt-20 rounded-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
