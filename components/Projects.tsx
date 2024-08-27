@@ -20,7 +20,11 @@ function Projects({}: Props) {
           >
             {/* Left Side Content */}
             <div className="hidden md:block w-1/4 text-center text-white">
-              <p>Your text on the left side here. You can add descriptions or other content.</p>
+              <p>The ultimate travel companion 
+                app designed to enhance your tourism experience in France. 
+                With our innovative Scavenger Hunt feature, AI-driven recommendations, and comprehensive travel tools, 
+                we aim to make your visit to France more enjoyable and culturally enriching.
+            </p>
             </div>
 
             {/* Main Image and Content */}
@@ -37,15 +41,15 @@ function Projects({}: Props) {
                 <h4 className="text-4xl font-semibold text-center">
                   Go Travel France
                 </h4>
-                <p className="text-lg text-center">
+                {/* <p className="text-lg text-center">
                   Enjoy the Trip with Good Moments. Explore France: Where Every Corner Tells a Story.
-                </p>
+                </p> */}
               </div>
             </div>
 
             {/* Right Side Content */}
             <div className="hidden md:block w-1/4 text-center text-white">
-              <p>Your text on the right side here. You can add more information or links.</p>
+              <p></p>
             </div>
           </div>
         ))}
